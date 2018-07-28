@@ -1,18 +1,14 @@
 <div class="site">
   <header>
-    <app-header></app-header>
+    <app-header (toggle)="drawer.toggle()"></app-header>
   </header>
   <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <app-sidebar></app-sidebar>
     </mat-drawer>
-    <div class="example-sidenav-content">
-      <main>
-        <button type="button" mat-button (click)="drawer.toggle()">
-          Toggle sidenav
-        </button>
-      </main>
-    </div>
+    <mat-drawer-content>
+      <div>main</div>
+    </mat-drawer-content>
 
   </mat-drawer-container>
   <footer>
