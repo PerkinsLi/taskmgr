@@ -1,22 +1,43 @@
-<mat-card class="card">
-  <mat-card-header>
-    <mat-card-title>
-      登录：
-    </mat-card-title>
-  </mat-card-header>
+<form>
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>
+        登录：
+      </mat-card-title>
+    </mat-card-header>
 
-  <mat-card-content>
-    <mat-form-field class="example-full-width">
-      <input matInput type="text" placeholder="您的Email"/>
-    </mat-form-field>
-    <mat-form-field class="example-full-width">
-      <input matInput type="password" placeholder="您的密码"/>
-    </mat-form-field>
-    <button mat-button mat-raised-button type="button">登录</button>
-  </mat-card-content>
+    <mat-card-content>
+      <mat-form-field class="full-width">
+        <input matInput type="text" placeholder="您的Email" />
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput type="password" placeholder="您的密码" />
+      </mat-form-field>
+      <button mat-button mat-raised-button type="button">登录</button>
+    </mat-card-content>
 
-  <mat-card-actions>
-    <p>还没有账户？<a href="">注册</a></p>
-    <p>忘记密码？<a href="">找回密码</a></p>
-  </mat-card-actions>
-</mat-card>
+    <mat-card-actions class="text-right">
+      <p>还没有账户？
+        <a href="">注册</a>
+      </p>
+      <p>忘记密码？
+        <a href="">找回密码</a>
+      </p>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>
+        每日佳句
+      </mat-card-title>
+      <mat-card-subtitle>
+        生命有裂痕，阳光才能照进来；没有永恒的黑夜，只有未到的黎明
+      </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../assets/images/timg.jpg">
+    <mat-card-content>
+      There is a rift in life, and the sun shines in; there is no eternal night, only the dawn.
+    </mat-card-content>
+  </mat-card>
+</form>
