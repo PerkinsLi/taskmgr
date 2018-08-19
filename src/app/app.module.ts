@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { CoreModule } from './core/core.module';
 import { LoginModule } from './login/login.module';
+import { ProjectModule } from './project/project.module';
+
 import {AppRoutesModule} from './app.routing';
 import { AppComponent } from './app.component';
 
@@ -14,7 +16,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutesModule,
     CoreModule,
-    LoginModule
+    LoginModule,
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
