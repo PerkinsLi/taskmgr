@@ -6,7 +6,8 @@ import {  MatSidenavModule,
           MatIconModule,
           MatCardModule,
           MatInputModule,
-          MatListModule
+          MatListModule,
+          MatSlideToggleModule
          } from '@angular/material';
 
 
@@ -19,7 +20,8 @@ import {  MatSidenavModule,
     MatIconModule,
     MatCardModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatSlideToggleModule
   ],
   exports: [
     MatSidenavModule,
@@ -28,7 +30,8 @@ import {  MatSidenavModule,
     MatIconModule,
     MatCardModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatSlideToggleModule
   ],
   declarations: []
 })

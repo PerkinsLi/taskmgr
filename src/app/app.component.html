@@ -1,10 +1,10 @@
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container [class.myapp-dark-theme]="darkTheme" autosize>
   <mat-drawer #drawer class="sidenav" mode="over" >
     <app-sidebar></app-sidebar>
   </mat-drawer>
   <div class="site">
     <header>
-      <app-header (toggle)="drawer.toggle()"></app-header>
+      <app-header (toggle)="drawer.toggle()" (toggleDarkTheme)="switchDarkTheme($event)"></app-header>
     </header>
     <main>
       <router-outlet></router-outlet>
