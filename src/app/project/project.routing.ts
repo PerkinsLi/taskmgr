@@ -1,11 +1,10 @@
 import {NgModule} from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ProjectListComponent} from './project-list/project-list.component';
 
-import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/login', pathMatch: 'full'},
-  {path: 'project', redirectTo: '/project', pathMatch: 'full'}
+  { path: 'project', component: ProjectListComponent  }
 ];
 
 @NgModule({
@@ -13,5 +12,6 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 
-export class AppRoutesModule{}
 
+
+export class ProjectRoutesModule {}

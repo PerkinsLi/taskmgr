@@ -9,7 +9,8 @@ import { RegisterComponent } from './register/register.component';
     ShareModule,
     LoginRoutesModule
   ],
-  declarations: [LoginComponent,
+  declarations: [
+    LoginComponent,
     RegisterComponent
 ]
 })
